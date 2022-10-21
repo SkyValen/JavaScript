@@ -1,0 +1,26 @@
+var memory = prompt () ;
+
+while (memory < 26) {
+    console.log(memory)
+    memory = memory * 8
+    if (memory == 26) {
+        console.log(memory)
+        console.log("MemoryReached26")
+    }
+    else if (memory > 39) {
+        console.log(memory)
+        memory = memory - 1
+        if (memory == 39) {
+            console.log(memory)
+            console.log("MemoryIs39")
+        }
+        else if (memory > 39) {
+            console.log(memory)
+            console.log("Memory is Bigger than 39")
+        }
+    }
+    else {
+        console.log(memory)
+        console.log("MemoryIs26-38")
+    }
+}
